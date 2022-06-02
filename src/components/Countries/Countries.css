@@ -1,0 +1,115 @@
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+    .countries-container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .country img {
+
+        width: 250px;
+    }
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .countries-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .country img {
+
+        width: 250px;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    .countries-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .country img {
+
+        width: 200px;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    .countries-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .country img {
+
+        width: 250px;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+
+    /* CSS */
+    .countries-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .country img {
+       
+        width: 200px;
+    }
+}

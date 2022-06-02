@@ -1,0 +1,20 @@
+.country {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .4rem .4rem 1rem #ccc,
+        -.4rem -.4rem 1rem #fff;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.country img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
